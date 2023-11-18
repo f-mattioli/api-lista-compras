@@ -1,0 +1,16 @@
+### Databases
+
+CREATE TABLE itens_compra (
+    id SERIAL PRIMARY KEY, 
+    descricao VARCHAR(20),
+    quantidade INTEGER,
+    preco_unitario DECIMAL(10,2),
+    compra_realizada BOOLEAN
+);
+
+
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+
+$ flask run --debug
